@@ -24,7 +24,7 @@ class Person{
       print("$name does not have enough money to buy ${car.name}");
     }
     }
-    void SellCar(Car car){
+    void sellCar(Car car){
       if(ownedCars.contains(car)){
         ownedCars.remove(car);
         moneyLeft+=car.price;
@@ -43,8 +43,8 @@ void main(){
   person1.buyCar(car2);
   person2.buyCar(car1);
   person2.buyCar(car2);
-  person1.SellCar(car1);
-  person2.SellCar(car2);
+  person1.sellCar(car1);
+  person2.sellCar(car2);
   car1.changePrice(18000);
   car2.changePrice(12000);
   person1.buyCar(car1);
